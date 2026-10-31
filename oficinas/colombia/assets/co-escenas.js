@@ -15,7 +15,7 @@
     if (src) { v.preload = 'auto'; v.src = src; } else { v.preload = 'none'; }
     film.appendChild(v); return v;
   }
-  var carro = video('/truly-colombia/oficinas/colombia/assets/colombia-desktop.mp4?v=10', 1);
+  var carro = video('/truly-colombia/oficinas/colombia/assets/colombia-desktop.mp4?v=11', 1);
   var mundo = video('', 2);
   var enMundo = false, cambiando = false;
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
