@@ -54,7 +54,17 @@ body.country-site[data-oficina] #inicio.cinema:after{background:linear-gradient(
 /* Colombia hero video (created by co-portada.js): fades in over the still photo once it plays */
 #inicio .film .co-portada-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s linear!important}
 #inicio .film .co-portada-video.lista{opacity:1}
-#inicio .film .co-portada-video.lista.cambio{opacity:0}</style>
+#inicio .film .co-portada-video.lista.cambio{opacity:0}
+/* Blog index styles (kept in the head so the HTML is valid) */
+.blog-head{text-align:center}
+.blog-head h1,.blog-head>p{margin-left:auto;margin-right:auto}
+.blog-head>p{max-width:46ch}
+.blog-lista .blog-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1180px;margin:0 auto}
+.blog-lista .blog-card img{background:#f7f6f2;object-fit:contain}
+.blog-fecha{margin:4px 0 0;font-size:13px;color:#5b6660}
+@media(max-width:900px){.blog-lista .blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.blog-lista .blog-grid{grid-template-columns:1fr}}
+</style>
 <link rel="stylesheet" href="/truly-colombia/landing/chat.css?v=56679acf6988"/>
 <link rel="stylesheet" href="/truly-colombia/machotes/assets/immersive.css?v=eae9ed883f63"/>
 <script defer src="/truly-colombia/machotes/assets/immersive.js?v=c9e8d807cdac"></script>

@@ -49,7 +49,17 @@ body.country-site[data-oficina] #inicio.cinema:after{background:linear-gradient(
 /* Colombia hero video (created by co-portada.js): fades in over the still photo once it plays */
 #inicio .film .co-portada-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s linear!important}
 #inicio .film .co-portada-video.lista{opacity:1}
-#inicio .film .co-portada-video.lista.cambio{opacity:0}</style>
+#inicio .film .co-portada-video.lista.cambio{opacity:0}
+/* Blog index styles (kept in the head so the HTML is valid) */
+.blog-head{text-align:center}
+.blog-head h1,.blog-head>p{margin-left:auto;margin-right:auto}
+.blog-head>p{max-width:46ch}
+.blog-lista .blog-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1180px;margin:0 auto}
+.blog-lista .blog-card img{background:#f7f6f2;object-fit:contain}
+.blog-fecha{margin:4px 0 0;font-size:13px;color:#5b6660}
+@media(max-width:900px){.blog-lista .blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.blog-lista .blog-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body class="country-site jardin" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -128,7 +138,7 @@ body.country-site[data-oficina] #inicio.cinema:after{background:linear-gradient(
 <tbody>
 <tr><th scope="row">Producción<span>Cada zona y su uso.</span></th><td data-label="Qué tener en cuenta"><ul class="checks"><li>Plano o distribución de la planta.</li><li>Procesos, almacenamiento y residuos.</li><li>Historial de avistamientos y tratamientos.</li></ul></td></tr>
 <tr><th scope="row">Bodegas y logística<span>El recorrido de la mercancía.</span></th><td data-label="Qué tener en cuenta"><ul class="checks"><li>Accesos, muelles de carga, recibo y despacho.</li><li>Condiciones de almacenamiento.</li><li>El entorno exterior y los vecinos.</li></ul></td></tr>
-<tr><th scope="row">Registros<span>Registros para la auditoría.</span></th><td data-label="Qué tener en cuenta"><ul class="checks"><li>Hallazgos y acciones de cada servicio.</li><li>Recomendaciones y medidas correctivas.</li><li>Documentación para sus auditorías.</li></ul></td></tr>
+<tr><th scope="row">Registros<span>Lo que queda por escrito.</span></th><td data-label="Qué tener en cuenta"><ul class="checks"><li>Hallazgos y acciones de cada servicio.</li><li>Recomendaciones y medidas correctivas.</li><li>Documentación para sus auditorías.</li></ul></td></tr>
 </tbody>
 </table></div>
 </section>

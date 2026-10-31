@@ -49,7 +49,17 @@ body.country-site[data-oficina] #inicio.cinema:after{background:linear-gradient(
 /* Colombia hero video (created by co-portada.js): fades in over the still photo once it plays */
 #inicio .film .co-portada-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s linear!important}
 #inicio .film .co-portada-video.lista{opacity:1}
-#inicio .film .co-portada-video.lista.cambio{opacity:0}</style>
+#inicio .film .co-portada-video.lista.cambio{opacity:0}
+/* Blog index styles (kept in the head so the HTML is valid) */
+.blog-head{text-align:center}
+.blog-head h1,.blog-head>p{margin-left:auto;margin-right:auto}
+.blog-head>p{max-width:46ch}
+.blog-lista .blog-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1180px;margin:0 auto}
+.blog-lista .blog-card img{background:#f7f6f2;object-fit:contain}
+.blog-fecha{margin:4px 0 0;font-size:13px;color:#5b6660}
+@media(max-width:900px){.blog-lista .blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.blog-lista .blog-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body class="country-site jardin" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -117,17 +127,7 @@ body.country-site[data-oficina] #inicio.cinema:after{background:linear-gradient(
 <article><h3>Dónde se concentra</h3><p>En Colombia los casos se concentran en zonas urbanas y municipios intermedios, sobre todo en climas cálidos y húmedos, con cuerpos de agua y deficiencias en saneamiento básico.</p></article>
 </div>
 </section>
-<section class="section detail-stats">
-<div class="section-heading">
-<p class="eyebrow">En Colombia</p>
-<h2>Cifras del Instituto<br/>Nacional de Salud.</h2>
-</div>
-<div class="stats">
-<article><strong>233</strong><p>casos de leptospirosis confirmados en el país durante 2024.</p><small>Instituto Nacional de Salud, informe de evento 2024</small></article>
-<article><strong>19</strong><p>fallecimientos por leptospirosis reportados en 2024.</p><small>Instituto Nacional de Salud, informe de evento 2024</small></article>
-<article><strong>627</strong><p>casos probables reportados en Florencia (Caquetá), el mayor número del país, seguida por Cartagena (429), Barranquilla (418) y Medellín (382). Son casos probables: no todos se confirman.</p><small>Instituto Nacional de Salud, informe de evento 2024</small></article>
-</div>
-</section>
+<section class="section detail-guidance"><div class="section-heading"><p class="eyebrow">En Colombia</p><h2>Cifras del Instituto<br/>Nacional de Salud.</h2></div><div class="guidance-grid"><article><h3>Casos en 2024</h3><p>El Instituto Nacional de Salud confirmó 233 casos de leptospirosis en el país durante 2024 y reportó 19 fallecimientos (informe de evento 2024).</p></article><article><h3>Dónde hubo más casos probables</h3><p>Florencia, en Caquetá (627), seguida por Cartagena (429), Barranquilla (418) y Medellín (382). Son casos probables: no todos se confirman (informe de evento 2024).</p></article></div></section>
 <section class="section detail-tabla">
 <div class="section-heading">
 <p class="eyebrow">Qué anotar</p>

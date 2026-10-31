@@ -49,7 +49,17 @@ body.country-site[data-oficina] #inicio.cinema:after{background:linear-gradient(
 /* Colombia hero video (created by co-portada.js): fades in over the still photo once it plays */
 #inicio .film .co-portada-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s linear!important}
 #inicio .film .co-portada-video.lista{opacity:1}
-#inicio .film .co-portada-video.lista.cambio{opacity:0}</style>
+#inicio .film .co-portada-video.lista.cambio{opacity:0}
+/* Blog index styles (kept in the head so the HTML is valid) */
+.blog-head{text-align:center}
+.blog-head h1,.blog-head>p{margin-left:auto;margin-right:auto}
+.blog-head>p{max-width:46ch}
+.blog-lista .blog-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1180px;margin:0 auto}
+.blog-lista .blog-card img{background:#f7f6f2;object-fit:contain}
+.blog-fecha{margin:4px 0 0;font-size:13px;color:#5b6660}
+@media(max-width:900px){.blog-lista .blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.blog-lista .blog-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body class="country-site jardin" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -113,7 +123,7 @@ body.country-site[data-oficina] #inicio.cinema:after{background:linear-gradient(
 </div>
 <div class="guidance-grid">
 <article><h3>Fiebre manchada</h3><p>En 2013, la revista Biomédica, del Instituto Nacional de Salud, publicó un caso probable de fiebre manchada por Rickettsia felis, transmitida por pulgas.</p></article>
-<article><h3>Dentro de la vivienda</h3><p>La Secretaría de Salud de Bogotá señala que las especies de pulgas que viven dentro de las casas se adaptan fácilmente a la vivienda y se reproducen en altas densidades.</p></article>
+<article><h3>Dentro de la vivienda</h3><p>La Secretaría Distrital de Salud de Bogotá señala que las especies de pulgas que viven dentro de las casas se adaptan fácilmente a la vivienda y se reproducen en altas densidades.</p></article>
 <article><h3>Roedores</h3><p>La misma Secretaría afirma que la presencia de roedores tiene relación directa con la infestación por pulgas.</p></article>
 </div>
 </section>
@@ -166,7 +176,7 @@ body.country-site[data-oficina] #inicio.cinema:after{background:linear-gradient(
       <h2>Lo que más nos preguntan.</h2>
     </div>
     <div>
-      <details><summary>¿Basta con tratar a la mascota?<span aria-hidden="true">+</span></summary><p>Revise también la casa. La Secretaría de Salud de Bogotá señala que las pulgas que viven dentro de las casas se adaptan fácilmente a la vivienda.</p></details>
+      <details><summary>¿Basta con tratar a la mascota?<span aria-hidden="true">+</span></summary><p>Revise también la casa. La Secretaría Distrital de Salud de Bogotá señala que las pulgas que viven dentro de las casas se adaptan fácilmente a la vivienda.</p></details>
       <details><summary>¿Las ratas tienen que ver?<span aria-hidden="true">+</span></summary><p>La misma Secretaría afirma que la presencia de roedores tiene relación directa con la infestación por pulgas.</p></details>
       <details><summary>¿Pueden transmitir enfermedades?<span aria-hidden="true">+</span></summary><p>En 2013 la revista Biomédica, del Instituto Nacional de Salud, publicó un caso probable de fiebre manchada por Rickettsia felis, transmitida por pulgas.</p></details>
       <details><summary>¿Y la salud de mi mascota?<span aria-hidden="true">+</span></summary><p>Para eso, consulte a su veterinario.</p></details>
