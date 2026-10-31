@@ -2,10 +2,9 @@
 // The car is its own layer (co-portada-carro-recorte.png, same 1920 x 1072 frame as the street photo).
 // Each rim is cut out of that layer with an elliptical mask and rotated in "circle space"
 // (squeezed to a circle, rotated, stretched back), so the spokes turn with the wheel's perspective.
-// With "reduce motion" turned on, nothing is drawn and the car stays still.
 (function () {
   const car = document.querySelector('#inicio .co-carro img');
-  if (!car || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!car) return; // the owner wants the hero car moving for every visitor, even with 'reduce motion' on
 
   // Rims measured on the 1920 x 1072 frame: center and radii in image pixels.
   const WHEELS = [

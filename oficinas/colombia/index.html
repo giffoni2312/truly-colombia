@@ -42,7 +42,8 @@
 @keyframes co-pasar{0%{opacity:0;transform:scale(1.06) translateX(1.6%)}25%{opacity:1}50%{opacity:1}75%{opacity:0}100%{opacity:0;transform:scale(1.06) translateX(-1.6%)}}
 #inicio .film .co-carro{transform-origin:55% 82%;animation:co-rebote .5s ease-in-out infinite alternate;will-change:transform}
 @keyframes co-rebote{from{transform:translateY(0) rotate(0)}to{transform:translateY(-.35%) rotate(-.12deg)}}
-@media (prefers-reduced-motion:reduce){#inicio .film .co-calle,#inicio .film .co-carro{animation:none}}</style>
+/* The owner wants the hero moving for every visitor: beat the site-wide reduce-motion rule (animation:none!important) for these layers only */
+@media (prefers-reduced-motion:reduce){#inicio .film .co-calle{animation:co-pasar 7s linear infinite!important}#inicio .film .co-calle-b{animation-delay:-3.5s!important}#inicio .film .co-carro{animation:co-rebote .5s ease-in-out infinite alternate!important}}</style>
 <link rel="stylesheet" href="/truly-colombia/landing/chat.css?v=56679acf6988"/>
 <link rel="stylesheet" href="/truly-colombia/machotes/assets/immersive.css?v=eae9ed883f63"/>
 <script defer src="/truly-colombia/machotes/assets/immersive.js?v=c9e8d807cdac"></script>
