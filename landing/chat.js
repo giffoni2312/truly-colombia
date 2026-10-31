@@ -3,7 +3,9 @@
    This copy is a local practice site: nothing is sent anywhere. Clicking any chat
    button only shows a notice. Restore by copying chat.original.js back to chat.js. */
 (function () {
-  const NOTICE = 'Chat de Truly AI desactivado en esta copia local. En el sitio real lo atiende el asistente.';
+  const NOTICE = 'El chat de Truly AI está desactivado en este borrador. En el sitio oficial lo atiende el asistente.';
+  // chat.css hides the widget until the page has the 'js' class (the real chat.js adds it); show the button, disabled.
+  document.documentElement.classList.add('js');
   function show() {
     let box = document.getElementById('chat-disabled-notice');
     if (!box) {

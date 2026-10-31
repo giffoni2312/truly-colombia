@@ -34,7 +34,15 @@
 .pending-data{border:2px dashed var(--yellow);background:#fffbe6;color:var(--ink);padding:16px 18px;border-radius:6px;max-width:52ch;font-size:15px;line-height:1.5}
 .pending-data strong{display:block;margin-bottom:4px}
 .source-note{font-size:13px;line-height:1.5;opacity:.8;margin-top:14px}
-.source-note a{color:inherit}</style>
+.source-note a{color:inherit}
+/* Colombia hero: the car is its own layer; the street runs behind it (two copies cross-fade so the loop has no jump) */
+#inicio .film .co-calle,#inicio .film .co-carro,#inicio .film .co-carro img,#inicio .film .co-ruedas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+#inicio .film .co-calle{opacity:0;animation:co-pasar 7s linear infinite;will-change:transform,opacity}
+#inicio .film .co-calle-b{animation-delay:-3.5s}
+@keyframes co-pasar{0%{opacity:0;transform:scale(1.06) translateX(1.6%)}25%{opacity:1}50%{opacity:1}75%{opacity:0}100%{opacity:0;transform:scale(1.06) translateX(-1.6%)}}
+#inicio .film .co-carro{transform-origin:55% 82%;animation:co-rebote .5s ease-in-out infinite alternate;will-change:transform}
+@keyframes co-rebote{from{transform:translateY(0) rotate(0)}to{transform:translateY(-.35%) rotate(-.12deg)}}
+@media (prefers-reduced-motion:reduce){#inicio .film .co-calle,#inicio .film .co-carro{animation:none}}</style>
 <link rel="stylesheet" href="/truly-colombia/landing/chat.css?v=56679acf6988"/>
 <link rel="stylesheet" href="/truly-colombia/machotes/assets/immersive.css?v=eae9ed883f63"/>
 <script defer src="/truly-colombia/machotes/assets/immersive.js?v=c9e8d807cdac"></script>
@@ -84,10 +92,10 @@
 <main id="contenido">
   <section class="cinema" id="inicio">
     <div class="film">
-      <picture>
-        <img src="/truly-colombia/oficinas/colombia/assets/co-ruleta-video-poster.jpg" alt=""/>
-      </picture>
-      <video muted loop playsinline preload="none" aria-hidden="true" data-src="/truly-colombia/oficinas/colombia/assets/co-ruleta-video.mp4"></video>
+      <picture><source media="(max-width:760px)" srcset="/truly-colombia/oficinas/colombia/assets/co-ruleta-medellin-v2.jpg"/><img src="/truly-colombia/oficinas/colombia/assets/co-ruleta-medellin-v2.jpg" alt=""/></picture>
+      <img class="co-calle co-calle-a" src="/truly-colombia/oficinas/colombia/assets/co-portada-calle-medellin.jpg" alt="" aria-hidden="true"/>
+      <img class="co-calle co-calle-b" src="/truly-colombia/oficinas/colombia/assets/co-portada-calle-medellin.jpg" alt="" aria-hidden="true"/>
+      <div class="co-carro" aria-hidden="true"><img src="/truly-colombia/oficinas/colombia/assets/co-portada-carro-recorte.png" alt=""/></div>
     </div>
     <div class="hero-text">
       <p class="eyebrow">Truly Nolen · <span data-preview-office>Colombia</span></p>
@@ -312,5 +320,6 @@
 </div>
 <script id="tia-textos" type="application/json">{"nombre":"Truly AI","enLinea":"En línea ahora","escribiendo":"Truly AI está escribiendo…","saludo":"¡Hola! Soy Truly AI, de Truly Nolen Colombia. Cuénteme qué necesita proteger y lo oriento en el siguiente paso.","campo":"Escríbale a Truly AI…","enviar":"Enviar","abrir":"Abrir el chat con Truly AI","cerrar":"Cerrar el chat","nueva":"Conversación nueva","invita":"¿Hablamos?","invitaSub":"Truly AI le responde al instante","descartar":"Descartar invitación","atajos":["¿Qué es Truly Inbound?","¿Cómo lo activo?","Necesito ayuda con mi cuenta"],"wa":"Seguir por WhatsApp","caido":"No pude conectarme. Intente enviar su mensaje de nuevo en unos instantes.","trabado":"No pude conectarme. Intente enviar su mensaje de nuevo en unos instantes.","noLeidos":"Respuesta nueva"}</script>
 <script id="tia-contexto" type="text/plain">Truly Nolen Colombia public website. The Truly Nolen International directory lists offices in Colombia, but this site does not publish office details yet: never state an office phone, address, schedule, coverage area, technicians, availability, prices or guarantees. Help visitors describe their pest situation (homes, businesses or industry): what they see, where, since when, type of space, children or pets. Explain the general Truly Nolen approach (listen, evaluate, propose, follow up) and what information helps. For service requests explain that Truly Nolen will review the request and confirm whether and how it can be attended. My Truly opens the separate VIP portal; Inside Truly opens the internal portal. No access to customer account data. Do not claim the chat stores no data. Language: Colombian Spanish, warm and professional, always usted, never tú or voseo.</script></div><noscript><p class="chat-noscript">Active JavaScript para conversar con Truly AI.</p></noscript><!-- immersive:end -->
+<script src="/truly-colombia/oficinas/colombia/assets/co-ruedas.js" defer></script>
 </body>
 </html>
