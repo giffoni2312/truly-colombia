@@ -6,7 +6,7 @@
 (function () {
   var film = document.querySelector('#inicio .film');
   if (!film) return;
-  var FUNDIDO = 0.8, MUNDO = 10, CARRO_FIN = 7.8; // the car take is cut at 7.8 s, as co-portada.js did (measured with flujo.py)
+  var FUNDIDO = 0.8, MUNDO = 10, CARRO_FIN = 10; // new car (31-oct): 10 s Gemini/Veo take from Pablo's base, quieto 3 %, flujo OK, 4K upscaled
 
   function video(src, z) {
     var v = document.createElement('video');
@@ -15,7 +15,7 @@
     if (src) { v.preload = 'auto'; v.src = src; } else { v.preload = 'none'; }
     film.appendChild(v); return v;
   }
-  var carro = video('/truly-colombia/oficinas/colombia/assets/co-portada-medellin-v2.mp4', 1);
+  var carro = video('/truly-colombia/oficinas/colombia/assets/colombia-desktop.mp4', 1);
   var mundo = video('', 2);
   var enMundo = false, cambiando = false;
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
