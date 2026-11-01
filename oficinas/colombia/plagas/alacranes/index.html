@@ -213,7 +213,11 @@ body.country-site .footer-columns a,body.country-site .footer-office a{min-heigh
 /* 5b) Remaining small targets: header portals, link at the end of blog articles, assistant button on the phone. */
 body.country-site[data-oficina] .site-nav .truly-portals a.my-truly-access,body.country-site[data-oficina] .site-nav .truly-portals a.inside-truly-access{min-height:44px!important;display:inline-flex!important;align-items:center}
 .blog-cuerpo p>a:only-child{display:inline-flex;align-items:center;min-height:44px}
-@media(max-width:760px){body[data-oficina] .tia-fab{min-width:56px!important;min-height:52px!important;justify-content:center}}</style><style>/* Colombia inner pages (ojo de diseño 1-nov-2026). Injected by armar-pagina.mjs after the shared styles. */
+@media(max-width:760px){body[data-oficina] .tia-fab{min-width:56px!important;min-height:52px!important;justify-content:center}}
+/* Phone menu (1-nov, Carlos): the panel ends with its options; below, the page is dimmed instead of an empty area. */
+@media(max-width:760px){body.country-site[data-machote]>header nav.is-open{min-height:0!important;max-height:calc(100svh - 72px)!important;padding-bottom:18px!important;box-shadow:0 1px 0 var(--line),0 0 0 100vmax rgba(23,33,42,.55)!important;clip-path:inset(0 -100vmax -100vmax -100vmax)}}
+@media(max-width:760px){body.country-site[data-machote]>header:has(nav.is-open){padding-bottom:0!important}}
+body.country-site .brand small{letter-spacing:.03em!important}</style><style>/* Colombia inner pages (ojo de diseño 1-nov-2026). Injected by armar-pagina.mjs after the shared styles. */
 /* Menu: same size and weight as the home (the home's rule only applies to pages with the film). */
 @media(min-width:1101px){
   body.country-site[data-oficina] .site-nav :is(nav>a,summary){font-size:15px;font-weight:500}
