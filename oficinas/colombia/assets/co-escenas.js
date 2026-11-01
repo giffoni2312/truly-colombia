@@ -17,7 +17,7 @@
   }
   // 4K (Real-ESRGAN in Colab, receta c4k, 1-nov-2026) for screens that can show it; HD for phones and small screens.
   var grande = (window.innerWidth || 0) * (window.devicePixelRatio || 1) > 1920;
-  var carro = video(grande ? '/truly-colombia/oficinas/colombia/assets/colombia-desktop-4k.mp4?v=1' : '/truly-colombia/oficinas/colombia/assets/colombia-desktop.mp4?v=12', 1);
+  var carro = video(grande ? '/truly-colombia/oficinas/colombia/assets/colombia-desktop-4k.mp4?v=2' : '/truly-colombia/oficinas/colombia/assets/colombia-desktop.mp4?v=13', 1);
   var mundo = video('', 2);
   var enMundo = false, cambiando = false;
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
