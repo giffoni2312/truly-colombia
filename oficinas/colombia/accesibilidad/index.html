@@ -122,7 +122,15 @@ body.country-site .detail-sources h2{margin-bottom:18px}
 }
 /* Headings of the classic blocks (services, related articles) laid out like the other blocks. */
 section:not(.g)>.g-cab{max-width:780px;margin:0 0 44px}
-section:not(.g)>.g-cab .g-ey{margin:0 0 14px;font-size:14px;font-weight:700;color:var(--ink)}</style>
+section:not(.g)>.g-cab .g-ey{margin:0 0 14px;font-size:14px;font-weight:700;color:var(--ink)}
+/* Cockroach species cards (guía de cucarachas). */
+.g-especies-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+.g-especies-grid article{background:#fff;border:1px solid var(--line)}
+.g-especies-grid img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#fff}
+.g-especies-grid h3{font-size:27px;font-weight:600;margin:22px 26px 4px}
+.g-especies-grid .g-especie-latin{margin:0 26px 12px;font-style:italic;color:var(--muted);font-size:16px}
+.g-especies-grid p{margin:0 26px 26px;color:var(--muted);font-size:17px;line-height:1.6}
+@media(max-width:760px){.g-especies-grid{grid-template-columns:1fr;gap:24px}.g-especies-grid h3{font-size:23px;margin:18px 20px 4px}.g-especies-grid p,.g-especies-grid .g-especie-latin{margin-left:20px;margin-right:20px}}</style>
 </head>
 <body class="country-site jardin" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
