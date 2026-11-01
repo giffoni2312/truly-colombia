@@ -202,7 +202,15 @@ section:not(.g)>.g-cab .g-ey{margin:0 0 14px;font-size:14px;font-weight:700;colo
 .g-especies-grid h3{font-size:27px;font-weight:600;margin:22px 26px 4px}
 .g-especies-grid .g-especie-latin{margin:0 26px 12px;font-style:italic;color:var(--muted);font-size:16px}
 .g-especies-grid p{margin:0 26px 26px;color:var(--muted);font-size:17px;line-height:1.6}
-@media(max-width:760px){.g-especies-grid{grid-template-columns:1fr;gap:24px}.g-especies-grid h3{font-size:23px;margin:18px 20px 4px}.g-especies-grid p,.g-especies-grid .g-especie-latin{margin-left:20px;margin-right:20px}}</style>
+@media(max-width:760px){.g-especies-grid{grid-template-columns:1fr;gap:24px}.g-especies-grid h3{font-size:23px;margin:18px 20px 4px}.g-especies-grid p,.g-especies-grid .g-especie-latin{margin-left:20px;margin-right:20px}}
+/* Sector cards with photo (comercios, industria), in place of the tables. */
+.g-sectores-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.g-sectores-grid article{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.g-sectores-grid img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.g-sectores-grid h3{font-size:24px;font-weight:600;margin:22px 24px 6px}
+.g-sectores-grid .g-sector-sub{margin:0 24px 14px;color:var(--muted);font-size:16px;line-height:1.5}
+.g-sectores-grid .g-lista{margin:0 24px 24px}
+@media(max-width:960px){.g-sectores-grid{grid-template-columns:1fr;gap:22px}}</style>
 </head>
 <body class="country-site jardin" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
