@@ -225,7 +225,9 @@ body.country-site .local-footer .footer-office>p[data-preview-office]{font-size:
 /* 4) Menu arrow drawn in CSS, aligned with the text (the ⌄ glyph sat low). */
 .site-nav .nav-menu>summary>span[aria-hidden]{display:inline-block;width:7px;height:7px;font-size:0;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:translateY(-3px) rotate(45deg);margin-left:9px;vertical-align:middle}.nav-menu[open]>summary>span[aria-hidden]{transform:translateY(1px) rotate(-135deg)}@media(max-width:960px){.site-nav .nav-menu>summary{padding-left:4px;padding-right:4px}}
 /* One card style across the site (3rd pass): blog cards square too. */
-.blog-card,.blog-card img{border-radius:0}</style>
+.blog-card,.blog-card img{border-radius:0}
+/* Phone header in yellow, like the new Truly design (1-nov). */
+@media(max-width:760px){body[data-machote]>header{background:#ffe000!important;box-shadow:none!important}body[data-machote]>header .country-menu-toggle{border:1.5px solid #17212a;border-radius:6px}}</style>
 </head>
 <body class="country-site jardin" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
