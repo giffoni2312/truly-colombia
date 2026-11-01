@@ -25,7 +25,7 @@
   var mundo = video('', 2);
   var enMundo = false, cambiando = false;
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
-  function cargar() { if (!mundo.getAttribute('src')) { mundo.src = '/truly-colombia/oficinas/assets/mundo-desktop.mp4'; mundo.load(); } }
+  function cargar() { if (!mundo.getAttribute('src')) { mundo.src = (window.innerWidth || 0) <= 760 ? '/truly-colombia/oficinas/colombia/assets/co-mundo-movil.mp4?v=1' : grande ? '/truly-colombia/oficinas/colombia/assets/co-mundo-desktop-4k.mp4?v=1' : '/truly-colombia/oficinas/assets/mundo-desktop.mp4'; mundo.load(); } }
   function aMundo() {
     if (enMundo || cambiando) return; cambiando = true; cargar();
     mundo.currentTime = 0; play(mundo); mundo.style.opacity = '1';
