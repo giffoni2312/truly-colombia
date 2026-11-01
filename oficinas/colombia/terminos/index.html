@@ -138,7 +138,20 @@ section:not(.g)>.g-cab .g-ey{margin:0 0 14px;font-size:14px;font-weight:700;colo
 .g-sectores-grid h3{font-size:24px;font-weight:600;margin:22px 24px 6px}
 .g-sectores-grid .g-sector-sub{margin:0 24px 14px;color:var(--muted);font-size:16px;line-height:1.5}
 .g-sectores-grid .g-lista{margin:0 24px 24px}
-@media(max-width:960px){.g-sectores-grid{grid-template-columns:1fr;gap:22px}}</style>
+@media(max-width:960px){.g-sectores-grid{grid-template-columns:1fr;gap:22px}}
+/* 2nd design pass (1-nov): */
+/* 1) 9 pests (or 3) in 2 columns left one card alone with an empty column: use 3 columns from 601 to 1100 px. */
+@media(min-width:561px) and (max-width:1100px){.g-plagas-grid[style*="--n:9"],.g-plagas-grid[style*="--n:3"]{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:24px}.g-plagas-grid[style*="--n:9"] h3,.g-plagas-grid[style*="--n:3"] h3{font-size:22px}}
+/* 10) Whole insect visible (legs were cut by the crop). */
+.g-especies-grid img.g-foto-entera{object-fit:contain;background:#fff}
+/* 8) One card style: service cards with square corners like the other cards. */
+.services .service,.services .service img{border-radius:0}
+/* 9) Air under the pest tabs. */
+@media(min-width:961px){body.country-site main .g-chips{padding-bottom:40px}}
+/* 14) Footer «Hablemos»: the office name no bigger than the column heading. */
+.footer-office p[data-preview-office]{font-size:inherit;font-weight:600}
+/* 4) Menu arrow drawn in CSS, aligned with the text (the ⌄ glyph sat low). */
+.site-nav .nav-menu>summary>span[aria-hidden]{display:inline-block;width:7px;height:7px;font-size:0;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:translateY(-3px) rotate(45deg);margin-left:9px;vertical-align:middle}.nav-menu[open]>summary>span[aria-hidden]{transform:translateY(1px) rotate(-135deg)}@media(max-width:960px){.site-nav .nav-menu>summary{padding-left:4px;padding-right:4px}}</style>
 </head>
 <body class="country-site jardin" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
