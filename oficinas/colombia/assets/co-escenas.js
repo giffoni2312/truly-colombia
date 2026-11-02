@@ -21,7 +21,7 @@
   // (colombia-movil.webp); a horizontal video would cut the car in a tall screen.
   var MOVIL = '/truly-colombia/oficinas/colombia/assets/colombia-movil.mp4?v=3';
   if ((window.innerWidth || 0) <= 760 && !MOVIL) return;
-  var carro = video((window.innerWidth || 0) <= 760 ? MOVIL : grande ? '/truly-colombia/oficinas/colombia/assets/colombia-desktop-4k.mp4?v=8' : '/truly-colombia/oficinas/colombia/assets/colombia-desktop.mp4?v=19', 1);
+  var carro = video((window.innerWidth || 0) <= 760 ? MOVIL : grande ? '/truly-colombia/oficinas/colombia/assets/colombia-desktop-4k.mp4?v=10' : '/truly-colombia/oficinas/colombia/assets/colombia-desktop.mp4?v=21', 1);
   var mundo = video('', 2);
   var enMundo = false, cambiando = false;
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
