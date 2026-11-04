@@ -553,7 +553,15 @@ body.country-site .detail-sources h2{margin-bottom:18px}
    was only as tall as its text (24 px); blog breadcrumbs (16 px) and the «Ver la ficha de…» link (22 px) too. */
 body.country-site .detail-sources li a{display:flex;align-items:center;min-height:44px}
 body.country-site .blog-migas a{display:inline-flex;align-items:center;min-height:44px}
-body.country-site .blog-cuerpo p>a:only-child{display:inline-flex;align-items:center;min-height:44px}</style>
+body.country-site .blog-cuerpo p>a:only-child{display:inline-flex;align-items:center;min-height:44px}/* Footer accordion, same as Argentina (pie-ar.js) */@media(max-width:960px){body.country-site[data-oficina] .g-mas,body.country-site[data-oficina] .local-footer nav a,body.country-site[data-oficina] .local-footer .pie-col a,body.country-site[data-oficina] .pie-boton{min-height:44px!important;display:inline-flex!important;align-items:center}body.country-site[data-oficina] .pest-breadcrumb a,body.country-site[data-oficina] .s-intro nav a{display:inline-flex;align-items:center;min-height:44px}body.country-site[data-oficina] .g-zona-op input{width:24px!important;height:24px!important}}
+body.country-site[data-oficina] .pie-boton{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;width:100%;min-height:44px;font:inherit;color:inherit}
+body.country-site[data-oficina] .pie-boton:focus-visible{outline:3px solid #FFD800;outline-offset:3px}
+@media(min-width:761px){body.country-site[data-oficina] .pie-boton{cursor:default;min-height:0}}
+@media(max-width:760px){body.country-site[data-oficina] .pie-boton::after{content:'+';font-size:20px;line-height:1}body.country-site[data-oficina] .pie-boton[aria-expanded=true]::after{content:'\2013'}body.country-site[data-oficina] .footer-columns>nav.pie-cerrado .pie-lista{display:none}body.country-site[data-oficina] .footer-columns>nav h2{margin:0!important}body.country-site[data-oficina] .footer-columns>nav{border-top:1px solid #d9d9cf;padding:6px 0}body.country-site[data-oficina] .pie-lista a,body.country-site[data-oficina] .footer-office a{min-height:44px;display:flex;align-items:center}body.country-site[data-oficina] .local-footer .footer-columns{grid-template-columns:1fr!important}body.country-site[data-oficina] .site-nav{background:#FFD800!important}}
+body.country-site[data-oficina] .local-footer .pie-lista{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+body.country-site[data-oficina] .local-footer .pie-lista a{margin:0!important;display:inline-flex;align-items:center;min-height:32px}
+@media(max-width:760px){body.country-site[data-oficina] .local-footer .pie-lista{gap:0;padding:4px 0 10px}body.country-site[data-oficina] .local-footer .pie-lista a{min-height:44px}}
+body.country-site[data-oficina] .pie-boton{justify-content:space-between!important;gap:16px!important}</style>
 </head>
 <body class="country-site jardin" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -650,7 +658,7 @@ body.country-site .blog-cuerpo p>a:only-child{display:inline-flex;align-items:ce
 <div class="footer-legal"><p>© Truly Nolen · Colombia</p>
 <nav aria-label="Información legal"><a href="/truly-colombia/oficinas/colombia/privacidad/">Privacidad</a><a href="/truly-colombia/oficinas/colombia/terminos/">Términos de uso</a><a href="/truly-colombia/oficinas/colombia/accesibilidad/">Accesibilidad</a></nav></div>
 </footer>
-<script defer src="/truly-colombia/oficinas/assets/pie.js"></script>
+<script defer src="/truly-colombia/oficinas/assets/pie-ar.js"></script>
 <!-- immersive:start --><div class="machote-chat-host"><div class="tia" data-chat data-quiet="true" data-storage-scope="oficina-colombia">
 <div class="tia-nudge" hidden><button class="tia-nudge-x" type="button" aria-label="Descartar invitación"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><button class="tia-nudge-open" type="button"><span class="tia-marca tia-marca--saludo" style="--tia-px:32px" aria-hidden="true"><i class="tia-disco"></i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c0-7 6-8 8 0s8 7 8 0-6-8-8 0-8 7-8 0Z"/></svg></span><span><b>¿Hablamos?</b><span>Truly AI le responde al instante</span></span></button></div>
 <div class="tia-panel" id="tia-panel" role="dialog" aria-label="Truly AI" aria-hidden="true">
