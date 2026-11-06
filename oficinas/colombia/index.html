@@ -1065,11 +1065,14 @@ body.country-site[data-oficina] .g-plagas-grid{display:grid!important;grid-templ
 @media(min-width:961px){body.country-site[data-oficina] #servicios .g-cab h2{font-size:46px!important;line-height:1.1}}
 /* Pest tabs: each name on one line on the phone. */
 body.country-site[data-oficina] .pest-families a{white-space:nowrap}
-/* Phone: soft light veil behind the dark title so it reads over the Bogotá still (Monserrate). */
-@media(max-width:760px){body.country-site[data-oficina] #inicio .film::after{content:"";position:absolute;left:0;right:0;top:0;height:31%;background:linear-gradient(180deg,rgba(255,255,255,.85),rgba(255,255,255,.6) 60%,rgba(255,255,255,0));pointer-events:none;z-index:4}}
+/* receta 6-nov-2026 (owner exception): phone hero text is white with NO cream/white veil; a soft dark text shadow keeps it readable. */
+@media(max-width:760px){html body.country-site[data-oficina] section#inicio#inicio :is(.eyebrow,.eyebrow *,h1,h1 *){color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.45),0 3px 16px rgba(0,0,0,.4)!important}html body.country-site[data-oficina] section#inicio#inicio::before{background:none!important}html body.country-site[data-oficina] section#inicio#inicio{background:#0e1419!important}html body.country-site[data-oficina] section#inicio#inicio .film::after{content:""!important;position:absolute;left:0;right:0;top:0;height:58%;background:linear-gradient(180deg,rgba(12,28,34,.66),rgba(12,28,34,.48) 55%,rgba(12,28,34,0))!important;pointer-events:none;z-index:4}}
 
 /* receta 4-nov-2026: the footer watercolor uses 100vw (counts the scrollbar) -> 8 px sideways scroll; clip it */
 body{overflow-x:clip}
+
+/* 6-nov-2026: on the phone the sanitization column grew to its longest line (376 px in a 316 px box) and cut the text; cap it. */
+@media(max-width:760px){html body.country-site[data-oficina] section.sanitization{grid-template-columns:minmax(0,1fr)!important}html body.country-site[data-oficina] section.sanitization .sanitization-copy>*{max-width:100%;white-space:normal!important;overflow-wrap:break-word}}
 </style></head>
 <body class="country-site natural brand-2026 a-site a-home" data-machote="colombia" data-oficina="colombia">
 <a class="skip" href="#contenido">Saltar al contenido</a>
